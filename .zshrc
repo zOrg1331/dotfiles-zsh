@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="tjkirch"
-ZSH_THEME="af-magic"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -50,7 +50,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras colored-man colorize common-aliases history-substring-search)
+plugins=(git git-extras colored-man-pages colorize common-aliases history-substring-search)
 
 # User configuration
 
@@ -95,3 +95,4 @@ SAVEHIST=10000
 alias mc='bash -c "mc -c"'
 
 export TERM=xterm-256color
+
