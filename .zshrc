@@ -70,3 +70,7 @@ LISTMAX=1000
 SAVEHIST=10000
 
 export TERM=xterm-256color
+if [ -n "$TMUX" ]; then
+	export TERM=screen-256color
+fi
+
