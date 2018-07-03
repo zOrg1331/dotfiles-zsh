@@ -81,3 +81,7 @@ export GPG_TTY
 
 GPG_AGENT_INFO=/var/run/user/500/gnupg/S.gpg-agent:0:1
 export GPG_AGENT_INFO
+
+function pcd() {
+    cd $HOME/j.gremwell/pentests/*/*$1*
+}
