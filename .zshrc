@@ -51,7 +51,7 @@ plugins=(git \
              tmux \
              vagrant \
              web-search \
-             colored-man-pages \
+#             colored-man-pages \
              colorize \
         )
 
