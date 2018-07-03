@@ -75,3 +75,9 @@ if [ -n "$TMUX" ]; then
 fi
 
 eval "$(fasd --init auto)"
+
+GPG_TTY=$(tty)
+export GPG_TTY
+
+GPG_AGENT_INFO=/var/run/user/500/gnupg/S.gpg-agent:0:1
+export GPG_AGENT_INFO
