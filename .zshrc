@@ -1,7 +1,15 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="ys"
+#ZSH_THEME="ys"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -79,9 +87,21 @@ eval "$(fasd --init auto)"
 GPG_TTY=$(tty)
 export GPG_TTY
 
-GPG_AGENT_INFO=/var/run/user/500/gnupg/S.gpg-agent:0:1
+GPG_AGENT_INFO=/var/run/user/500/gnupg/S.gpg-agent
 export GPG_AGENT_INFO
 
 function pcd() {
     cd $HOME/j.gremwell/pentests/*/*$1*
 }
+
+#export GDK_SCALE=2
+#export QT_AUTO_SCREEN_SCALE_FACTOR=1
+#export PLASMA_USE_QT_SCALING=1
+
+export QSYS_ROOTDIR="/home/zorg/intelFPGA/18.0/quartus/sopc_builder/bin"
+
+#export QT_LOGGING_RULES="*.debug=true"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
